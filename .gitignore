@@ -1,0 +1,14 @@
+.idea
+.vscode
+*.sublime*
+
+build/
+node_modules/
+dist/
+package-lock.json
+
+.DS_Store
+.DS_Store?
+.Trashes
+Thumbs.db
+ehthumbs.db

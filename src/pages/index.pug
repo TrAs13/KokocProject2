@@ -1,0 +1,20 @@
+extends ../templates/layouts/baseLayout.pug
+include ../templates/mixins/mainSlider
+
+block variables
+  - let title = 'Index';
+
+block main
+  +slider(["../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg","../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg","../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg","../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg"])
+  script(src='//code.jquery.com/jquery-1.11.0.min.js')
+  script(src='js/vendors.js')
+  script(src='js/main.js')
+
+
+
+
+
+
+
+
+
