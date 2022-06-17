@@ -1,32 +1,39 @@
 .main-screen {
   display: flex;
   justify-content: space-between;
-  
-  &__left{
+  margin-bottom: 42px;
+  position: relative;
+
+  &__left {
     max-width: 366px;
     padding-top: 77px;
   }
+  &__right {
+    position: absolute;
+    max-width: 500px;
+    max-height: 400px;
+    left: 50%;
+  }
 }
 
-.tagline{
-
-  &__sup{
-    font-family: 'Source Serif Pro', serif;
+.tagline {
+  &__sup {
+    font-family: "Source Serif Pro", serif;
     font-size: 61px;
     margin-bottom: 20px;
   }
 
-  &__sub{
+  &__sub {
     font-size: 16px;
     font-weight: 400;
-    color: #1A0A03;
+    color: #1a0a03;
   }
-
-
 }
 
+.oranje {
+  color: #ee5514;
+}
 
-
-.oranje{
-  color: #EE5514;
+.border{
+  padding-right: 109px;
 }
