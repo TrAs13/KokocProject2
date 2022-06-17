@@ -21,21 +21,18 @@ html(lang='en')
         .main-screen__left
           .tagline
             .tagline__sup
-              | Life is better in running 
+              | Life is better in running
               span.oranje shoes
               |.
           .tagline__sub
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices
-            
-        .main-screen__right
-          block main
-          
 
-      
-        
+        .main-screen__right
+            include ../blocks/slider
+    block main
+
+
     footer.footer футер
-    
     script(src="https://code.jquery.com/jquery-3.6.0.min.js")
     script(src="../js/vendors.js")
     script(src="../js/main.js")
-      
