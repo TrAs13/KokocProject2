@@ -1,0 +1,16 @@
+.main-screen
+  .main-screen__left
+    .tagline
+      .tagline__sup
+        | Life is better in running 
+        span.oranje shoes
+        |.
+    .tagline__sub
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices
+      
+  .main-screen__right
+    -let images = ['../images/sneaker1.png', '../images/sneaker3.png']
+    +slider(images)
+  img.border(src="../../images/border.png", alt="")
+
+.filter
