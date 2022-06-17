@@ -1,0 +1,77 @@
+.main-button {
+  background-color: $main-color;
+  border: 0;
+  border-radius: 5px;
+  color: $text-color;
+  font-size: $medium;
+  padding: 8px;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+    color: #fff;
+    background: $second-color;
+  }
+}
+
+.disabled {
+  background-color: $second-color;
+}
+
+@mixin makeButton($bg-color, $t-color, $f-size, $b-radius) {
+  background-color: $bg-color;
+  border: none;
+  color: $t-color;
+  font-size: $f-size;
+  border-radius: $b-radius;
+  padding: px2em(($f-size * .83), $base) px2em(($f-size * 1.66), $base);
+
+  &:hover {
+    filter: brightness(140%);
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: $second-color;
+
+    &:hover {
+      filter: grayscale(150%);
+    }
+  }
+}
+
+$themePallete: (
+  success: #27ba6c,
+  info: #03a9f4,
+  primary: #EE5514,
+  danger: #ff1a1a,
+);
+
+$sizePallete: (
+  small: $small,
+  medium: $medium,
+  large: $large,
+);
+
+@mixin createSizeButtons($sizePallete) {
+  @each $btn, $size in $sizePallete {
+    &--#{$btn} {
+      font-size: $size;
+    }
+  }
+}
+
+@mixin createThemeButtons($themePallete) {
+  @each $btn, $color in $themePallete {
+    &--#{$btn} {
+      @include makeButton($color, #fff, $medium, 5px);
+    }
+  }
+}
+
+.btn {
+  @include makeButton($main-color, #fff, $medium, 5px);
+  @include createThemeButtons($themePallete);
+  @include createSizeButtons($sizePallete);
+}

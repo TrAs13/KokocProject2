@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+}
+
+.nav {
+  display: flex;
+  // justify-content: space-between;
+
+  &__link {
+    margin-right: 40px;
+  }
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img{
+    margin-right: 101px;
+  }
+}
