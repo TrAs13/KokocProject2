@@ -1,26 +1,11 @@
-$background-color: #fff;
+$main-color: rgb(84, 102, 239);
 $text-color: #fff;
-$main-color: rgb(49, 137, 252);
-$secondary-color: rgb(152, 154, 156);
-$menu-background-color: rgb(31, 31, 31);
-$active: rgb(252, 7, 7);
-$submenu-background-color: rgb(241, 115, 115);
+$second-color: rgb(173, 161, 150);
 
-$fs-base: 16px;
-$fs-small: 10px;
-$fs-medium: 14px;
-$fs-big: 24px;
+$small: 10px;
+$medium: 16px;
+$large: 18px;
 
-$themePallete: (
-  primary: #000,
-  success: #27ba6c,
-  info: #03a9f4,
-  warning: #f83,
-  danger: #ff1a1a,
-);
+$base: 16px;
 
-$sizePallete: (
-  small: 15px,
-  medium: 20px,
-  big: 25px,
-);
+$red-color: rgb(182, 32, 32);

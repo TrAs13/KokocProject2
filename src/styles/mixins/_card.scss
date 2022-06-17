@@ -1,0 +1,41 @@
+.card-item {
+  width: 250px;
+  color: #333;
+  background: #fff;
+
+  &__wrapper {
+    padding: 10px;
+    border-top: 1px solid #756a6a;
+    border-left: 1px solid #756a6a;
+    border-right: 1px solid #756a6a;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 20px;
+    border: 1px solid #756a6a;
+  }
+
+  &__name {
+    font-weight: 600;
+    color: #0f0e0e;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    margin-bottom: 15px;
+  }
+
+  &__li {
+    list-style: none;
+  }
+
+  &__price {
+    font-style: 20px;
+    font-weight: 700;
+    color: #0f0e0e;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin makeSubList($left, $top) {
+  display: none;
+  position: absolute;
+  min-width: 300px;
+  left: $left;
+  top: $top;
+
+  & a:hover {
+    color: rgb(215, 35, 35);
+  }
+}

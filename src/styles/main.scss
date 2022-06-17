@@ -1,4 +1,4 @@
-@import 'vars/*';
-@import 'global';
-@import 'vendors/*';
+@import 'vars/**/*';
+@import 'mixins/**/*';
+@import 'vendors/**';
 @import 'blocks/*';

@@ -1,20 +1,7 @@
-extends ../templates/layouts/baseLayout.pug
-include ../templates/mixins/mainSlider
-
-block variables
-  - let title = 'Index';
-
+extends ../templates/layout/baseLayout.pug
 block main
-  +slider(["../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg","../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg","../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg","../images/kirpich__common.jpg","https://tula.belydom.ru/upload/iblock/477/4771abf74820424b5665aacab39d179a.jpg"])
-  script(src='//code.jquery.com/jquery-1.11.0.min.js')
-  script(src='js/vendors.js')
-  script(src='js/main.js')
-
-
-
-
-
-
-
-
-
+  //- include ../templates/blocks/buttons
+  include ../templates/blocks/slider
+  //- include ../templates/blocks/cards
+block variables
+  - var title = 'Main';
