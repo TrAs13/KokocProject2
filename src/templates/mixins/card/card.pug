@@ -1,7 +1,13 @@
-mixin card(img_src, title, sub-title)
-  .cards-wrapper__item
-      .circle
+mixin card(img_src, title, subTitle)
+  .cards-wrapper__item.item
+      .item__circle
         img.cirlce___img(src=img_src, alt="")
+      .item__title= title
+      .item__sub-title= subTitle
+      .item__link
+        a.link(href="#")
+          |Read more
+          img(src="../../images/arrow.svg", alt="")     
       .title=title
       .sub-title=sub-title
 
@@ -15,4 +21,3 @@ mixin gallaryCard(img_src, name,size,price)
     | Price:
     span.sl-gal-item__span=price
   +button('Buy now','large','primary',false)
-

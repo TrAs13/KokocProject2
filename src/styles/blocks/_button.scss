@@ -24,7 +24,7 @@
   color: $t-color;
   font-size: $f-size;
   border-radius: $b-radius;
-  padding: px2em(($f-size * .83), $base) px2em(($f-size * 1.66), $base);
+  padding: px2em(($f-size * .86), $base) px2em(($f-size * 1.8), $base);
 
   &:hover {
     filter: brightness(140%);
@@ -71,7 +71,7 @@ $sizePallete: (
 }
 
 .btn {
-  @include makeButton($main-color, #fff, $medium, 5px);
+  @include makeButton($main-color, #fff, $large, 5px);
   @include createThemeButtons($themePallete);
   @include createSizeButtons($sizePallete);
 }
