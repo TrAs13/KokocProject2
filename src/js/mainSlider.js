@@ -5,7 +5,7 @@ $(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    fade: true,
-    cssEase: 'linear'
+    // fade: true,
+    // cssEase: 'linear'
   });
 });

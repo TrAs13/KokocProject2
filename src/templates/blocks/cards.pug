@@ -1,7 +1,9 @@
-main.main
-  .main__container.container
-    -let card1 = ["Вид: пустотелый", "Марка: М150", "Поверхность: рифленый", "Размер: 250x120x88", "Формат: 1,4 НФ", "Цвет: красный"]
-    -let cards = [['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1,'11,05'],['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1,'11,05'],['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1,'11,05'],['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1],['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1],['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1],['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1,'11,05'],['../images/kirpich.png','Кирпич керамический Озерский одинарный',card1,'11,05'],['', 'Кирпич керамический Озерский одинарный',card1,'11,05'],['', 'Кирпич керамический Озерский одинарный',card1]]
-
-    each value in cards
-      +card(value[0],value[1],value[2],value[3])
+section.cards
+  .container
+    .title
+      .sup-title FEATURE
+      h2.sub-title We have best feature in Shoes
+    .cards-wrapper
+        //- +card('','','')
+        //- +card('','','')
+        //- +card('','','')
