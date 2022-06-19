@@ -1,5 +1,15 @@
+include ../card/card
+
 mixin slider(images)
   .slider
     each image in images
       .slider__item
         img.slider__img(src=image alt="")
+
+mixin sliderGallary(params)
+  .slider-gallary
+    each item in params
+      .slider-gallary__item.sl-gal-item
+        +gallaryCard(item[0],item[1],item[2],item[3])
+
+

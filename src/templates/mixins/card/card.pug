@@ -2,7 +2,17 @@ mixin card(img_src, title, sub-title)
   .cards-wrapper__item
       .circle
         img.cirlce___img(src=img_src, alt="")
-    
       .title=title
       .sub-title=sub-title
-      
+
+mixin gallaryCard(img_src, name,size,price)
+  img.sl-gal-item__img(src=img_src, alt="sneaker")
+  .sl-gal-item__name=name
+  .sl-gal-item__size
+    | Size:
+    span.sl-gal-item__span=size
+  .sl-gal-item__price
+    | Price:
+    span.sl-gal-item__span=price
+  +button('Buy now','large','primary',false)
+
