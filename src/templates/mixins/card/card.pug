@@ -1,8 +1,11 @@
-mixin card(img_src, title, sub-title)
-  .cards-wrapper__item
-      .circle
+mixin card(img_src, title, subTitle)
+  .cards-wrapper__item.item
+      .item__circle
         img.cirlce___img(src=img_src, alt="")
     
-      .title=title
-      .sub-title=sub-title
-      
+      .item__title= title
+      .item__sub-title= subTitle
+      .item__link
+        a.link(href="#")
+          |Read more
+          img(src="../../images/arrow.svg", alt="")     

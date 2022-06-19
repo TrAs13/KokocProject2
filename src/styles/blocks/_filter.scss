@@ -1,8 +1,12 @@
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #EE5514;
+  border-right: 1px solid #ee5514;
   height: 40px;
+
+  &:last-child{
+    border: none;
+  }
 }
 
 .filter {
@@ -11,9 +15,10 @@
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.03);
   max-width: max-content;
+  margin-bottom: 140px;
 }
 
-.form{
+.form {
   display: flex;
 }
 
@@ -22,7 +27,7 @@
   width: 150px;
   height: 40px;
   padding: 0 10px;
-  
+
   &[data-state="active"] {
     .select__title {
       &::before {
@@ -33,11 +38,11 @@
         transform: translate(3px, -50%) rotate(45deg);
       }
     }
-    
+
     .select__content {
       opacity: 1;
     }
-    
+
     .select__label + .select__input + .select__label {
       max-height: 40px;
       border-top-width: 1px;
@@ -45,7 +50,7 @@
   }
 }
 
-.select__name{
+.select__name {
   margin-bottom: 5px;
   // position: absolute;
   // top: -30%;
@@ -60,7 +65,7 @@
   // padding: 8px 16px;
 
   border-radius: 5px;
-  
+
   cursor: pointer;
 
   &::before,
@@ -68,8 +73,8 @@
     content: "";
 
     position: absolute;
-    top:95%;
-    right: 20%;
+    top: 110%;
+    right: 30%;
 
     display: block;
     width: 10px;
@@ -86,11 +91,11 @@
   }
 
   &:hover {
-    border-color: #EE5514;
+    border-color: #ee5514;
 
     &::before,
     &::after {
-      background-color: #EE5514;
+      background-color: #ee5514;
     }
   }
 }
@@ -100,21 +105,21 @@
   padding: 8px 16px;
   margin: 0 auto;
   margin-bottom: 10px;
-  
+
   border: solid 1px #c7ccd1;
   border-radius: 5px;
-  
+
   transition: all 0.2s ease-out;
-  
+
   cursor: pointer;
-  
+
   font-weight: bold;
-  
+
   background-color: #ffffff;
   color: #333333;
-  
+
   &:hover {
-    background-color: #EE5514;
+    background-color: #ee5514;
     color: #ffffff;
   }
 }
@@ -133,7 +138,7 @@
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  
+
   transition: all 0.3s ease-out;
 
   opacity: 0;
@@ -157,17 +162,16 @@
   height: 40px;
   max-height: 0;
   padding: 0 16px;
-  
+
   transition: all 0.2s ease-out;
 
   cursor: pointer;
-  
+
   overflow: hidden;
 
   &:hover {
-    background-color: #EE5514 !important;
+    background-color: #ee5514 !important;
 
     color: #ffffff;
   }
 }
-
