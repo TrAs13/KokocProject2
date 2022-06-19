@@ -20,6 +20,10 @@
 
 .form {
   display: flex;
+
+  &:nth-child(n){
+    background-color: #333333;
+  }
 }
 
 .select {
