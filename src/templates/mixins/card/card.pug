@@ -1,19 +1,8 @@
-mixin card(img_src, title, list,price="Цена по запросу")
-  if (price!="Цена по запросу")
-    - price = price+ " РУБ/ШТ"
-  .card-item
-    .card-item__wrapper
-      if img_src==''
-        img.card-item__img(src='../images/pusto.png', alt="")
-      else 
-        img.card-item__img(src=img_src, alt="")
+mixin card(img_src, title, sub-title)
+  .cards-wrapper__item
+      .circle
+        img.cirlce___img(src=img_src, alt="")
     
-    .card-item__info
-      .card-item__name= title
-
-      ul.card-item__list
-        each val in list
-          li.card-item__li= val
-
-      .card-item__price= price
+      .title=title
+      .sub-title=sub-title
       
