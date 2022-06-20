@@ -1,120 +1,114 @@
-.footer{
-  background: #FEF8F6;
-  // display: flex;
-  padding: 100px 230px 30px 230px;
+.footer {
+  background: #fef8f6;
+  padding: 95px 230px 30px 230px;
+  min-height: 441px;
 }
 
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
 
-  &__left{
+  &__left {
     display: flex;
     flex-wrap: wrap;
     width: 694px;
     justify-content: space-between;
   }
 
-  &__right{
+  &__right {
     max-width: 320px;
   }
-
 }
 
-.information{
- 
-
-  
-}
-
-.links{
+.links {
   max-width: 265px;
   font-weight: 400;
   font-size: 18px;
-  color: #1A0A03;
+  color: #1a0a03;
 
-  &__logo{
+  &__logo {
     margin-bottom: 5px;
   }
 
-  &__addres{
+  &__addres {
     opacity: 80%;
     margin-bottom: 20px;
+    max-width: 203px;
   }
 
-  &__email{
-    color: #1A0A03;
+  &__email {
+    color: #1a0a03;
     opacity: 80%;
     display: block;
     margin-bottom: 10px;
   }
 }
 
-.contacts{
+.contacts {
   display: flex;
   max-width: 155px;
   justify-content: space-between;
 }
 
-.services{
-  color: #1A0A03;
+.services {
+  color: #1a0a03;
 
-  &__title{
+  &__title {
     margin-bottom: 31px;
   }
 
-  &__link{
+  &__link {
     margin-bottom: 10px;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
 }
 
-.footer-title{
-  color: #1A0A03;
+.footer-title {
+  color: #1a0a03;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 31px;
 }
 
-.footer-list{
+.footer-list {
   list-style: none;
 }
 
-.footer-li{
+.footer-li {
   margin-bottom: 10px;
   opacity: 80%;
   font-size: 18px;
 }
 
-.contact__text{
-  color: #1A0A03;
+.contact__text {
+  color: #1a0a03;
   opacity: 80%;
   font-size: 18px;
   margin-bottom: 38px;
 }
 
-.sub-footer{
+.sub-footer {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
   padding-top: 30px;
-  color: #1A0A03;
+  color: #1a0a03;
   opacity: 80%;
   box-shadow: 0px 5px 3px -6px rgba(34, 60, 80, 0.6) inset;
 }
 
-.input{
+.input {
   padding: 15px 17px;
-  border: 1px solid #E5DFDD;
+  border: 1px solid #e5dfdd;
   border-radius: 5px;
   outline: 0 !important;
   font-size: 14px;
-  color: #1A0A03;
+  color: #1a0a03;
+  background: #fef8f6;
   font-weight: 400;
-  
 }

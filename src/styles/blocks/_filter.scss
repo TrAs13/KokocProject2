@@ -4,7 +4,7 @@
   border-right: 1px solid #ee5514;
   height: 40px;
 
-  &:last-child{
+  &:last-child {
     border: none;
   }
 }
@@ -20,10 +20,6 @@
 
 .form {
   display: flex;
-
-  &:nth-child(n){
-    background-color: #333333;
-  }
 }
 
 .select {
