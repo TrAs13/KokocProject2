@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
-
 }
 
 .nav {
@@ -13,6 +12,11 @@
 
   &__link {
     margin-right: 40px;
+    transition: .1s linear;
+
+    &:hover{
+      color: #EE5514;
+    }
   }
 }
 
@@ -21,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
 
-  &__img{
+  &__img {
     margin-right: 101px;
   }
 }
