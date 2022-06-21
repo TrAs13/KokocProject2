@@ -19,3 +19,12 @@ mixin gallaryCard(img_src, name,size,price)
     | Price:
     span.sl-gal-item__span=price
   +button('Buy now','large','primary',false)
+
+
+mixin testimonialsCard(img_src, title,paragraph,author,role)
+  img.sl-test-item__img(src=img_src, alt="avatar")
+  img.sl-test-item__apostrof(src="images/apostrof.png", alt="")
+  .sl-test-item__title=title
+  .sl-test-item__paragraph=paragraph
+  .sl-test-item__author=author
+  .sl-test-item__role=role

@@ -12,4 +12,9 @@ mixin sliderGallary(params)
       .slider-gallary__item.sl-gal-item
         +gallaryCard(item[0],item[1],item[2],item[3])
 
+mixin sliderTestimonials(params)
+  .slider-testimonials
+    each item in params
+      .slider-testimonials__item.sl-test-item
+        +testimonialsCard(item[0],item[1],item[2],item[3],item[4])
 
