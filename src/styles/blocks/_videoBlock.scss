@@ -1,5 +1,5 @@
 .video {
-  margin-bottom: 140px;
+  margin-bottom: 136px;
   display: flex;
   flex-direction: row;
 
@@ -47,10 +47,9 @@
   font-family: "Source Serif Pro", serif;
 
   &__video {
-    // color: #ee5514;
-    // margin-bottom: 10px;
-    // text-transform: uppercase;
-    // font-size: 20px;
+
+    margin-bottom: 15px;
+
   }
 
   &__header {
@@ -62,5 +61,7 @@
     font-family: "Poppins", sans-serif;
     color: #1a0a03;
     font-size: 16px;
+    opacity: 70%;
+    font-weight: 400;
   }
 }

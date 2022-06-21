@@ -1,5 +1,9 @@
 .gallary {
   margin-bottom: 140px;
+  &__title{
+    letter-spacing: 1.5px;
+    line-height: 150%;
+  }
 }
 
 .gal-categories {
@@ -7,7 +11,14 @@
   font-size: 18px;
   display: flex;
   gap: 35px;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
+
+  letter-spacing: 2px;
+  line-height: 90%;
+
+  &__title{
+    
+  }
 }
 
 .gal-cat-items {
@@ -104,7 +115,7 @@
     width: 262px;
     height: 170px;
     transition: 0.2s linear;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 
     &:hover {
       border: 2px solid #ee5514;
@@ -115,13 +126,17 @@
     font-family: "Source Serif Pro", serif;
     font-weight: 600;
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+  }
+
+  &__size{
+    margin-bottom: 12px;
   }
 
   &__price {
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   &__span {
