@@ -9,7 +9,7 @@
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.03);
   max-width: max-content;
-  margin-bottom: 140px;
+  margin-bottom: 136px;
 }
 
 .form {
@@ -49,11 +49,11 @@
   margin-bottom: 5px;
   font-weight: 400;
   opacity: 70%;
-  color: #1A0A03;
+  color: $text-color;
 }
 
 .select__title {
-  color: #1A0A03;
+  color: $text-color;
   font-weight: 500;
   font-size: 18px;
   align-items: center;
@@ -80,7 +80,7 @@
 
     transition: all 0.3s ease-out;
 
-    background-color: #EE5514;
+    background-color: $main-color;
     opacity: 35%;
 
     transform: translate(-3px, -50%) rotate(45deg);
@@ -90,11 +90,11 @@
   }
 
   &:hover {
-    border-color: #ee5514;
+    border-color: $main-color;
 
     &::before,
     &::after {
-      background-color: #ee5514;
+      background-color: $main-color;
     }
   }
 }
@@ -118,14 +118,14 @@
   color: #333333;
 
   &:hover {
-    background-color: #ee5514;
+    background-color: $main-color;
     color: #ffffff;
   }
 }
 .select__content {
   position: absolute;
-  top: 60px;
-  left: -9px;
+  top: 70px;
+  left: 0px;
 
   display: flex;
   flex-direction: column;
@@ -169,7 +169,7 @@
   overflow: hidden;
 
   &:hover {
-    background-color: #ee5514 !important;
+    background-color: $main-color !important;
 
     color: #ffffff;
   }

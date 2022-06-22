@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  margin-top: 44px;
+  margin-top: 40px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
@@ -8,14 +8,14 @@
 
 .nav {
   display: flex;
-  // justify-content: space-between;
 
   &__link {
     margin-right: 40px;
-    transition: .1s linear;
+    transition: 0.1s linear;
+    opacity: 70%;
 
-    &:hover{
-      color: #EE5514;
+    &:hover {
+      color: $main-color;
     }
   }
 }

@@ -1,11 +1,11 @@
 .main-screen {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 80px;
   position: relative;
 
   &__left {
-    max-width: 366px;
+    width: 366px;
     padding-top: 77px;
   }
   &__right {
@@ -27,14 +27,18 @@
   &__sub {
     font-size: 16px;
     font-weight: 400;
-    color: #1a0a03;
+    color: $text-color;
+    opacity: 70%;
+    line-height: 1.5;
   }
 }
 
 .oranje {
-  color: #ee5514;
+  color: $main-color;
 }
 
 .border {
   padding-right: 109px;
+  position: absolute;
+  left: 56%;
 }

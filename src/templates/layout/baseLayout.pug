@@ -51,9 +51,9 @@ html(lang='en')
           .information__services__content.contact
             .contact__title.footer-title Contact us
             p.contact__text Lorem ipsum dolor sit amet consectetur adipiscin.
-            .contact__input
-              form(action="#" method="post")
-                input.input(type="email" placeholder="Mail address")
+            .contact__input.email
+              form.email__form(action="index.html" method="post")
+                input.email__input(type="email" placeholder="Mail address")
                 +button('Send','--form')
         .sub-footer Copyright 2021 The PUMA All Rights Reserved.
     script(src="https://code.jquery.com/jquery-3.6.0.min.js")

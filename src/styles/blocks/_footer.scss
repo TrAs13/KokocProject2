@@ -9,14 +9,13 @@
   flex-wrap: wrap;
   margin-bottom: 54px;
   gap: 77px;
-
 }
 
 .links {
   max-width: 265px;
   font-weight: 400;
   font-size: 18px;
-  color: #1a0a03;
+  color: $text-color;
 
   &__logo {
     margin-bottom: 5px;
@@ -29,21 +28,21 @@
   }
 
   &__email {
-    color: #1a0a03;
+    color: $text-color;
     opacity: 80%;
     display: block;
     margin-bottom: 10px;
   }
 }
 
-.contacts{
-  &__img{
+.contacts {
+  &__img {
     margin-right: 25px;
   }
 }
 
 .services {
-  color: #1a0a03;
+  color: $text-color;
 
   &__title {
     margin-bottom: 31px;
@@ -58,16 +57,12 @@
   }
 }
 
-.support{
-  // margin-right: 124px;
-}
-
 .contact {
   max-width: 320px;
 }
 
 .footer-title {
-  color: #1a0a03;
+  color: $text-color;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 31px;
@@ -79,12 +74,12 @@
 
 .footer-li {
   margin-bottom: 10px;
-  opacity: 80%;
+  opacity: 70%;
   font-size: 18px;
 }
 
 .contact__text {
-  color: #1a0a03;
+  color: $text-color;
   opacity: 70%;
   font-size: 18px;
   margin-bottom: 38px;
@@ -95,18 +90,26 @@
   font-weight: 500;
   text-align: center;
   padding-top: 30px;
-  color: #1a0a03;
-  opacity: 80%;
+  color: $text-color;
+  opacity: 70%;
   box-shadow: 0px 5px 3px -6px rgba(34, 60, 80, 0.6) inset;
 }
 
-.input {
-  padding: 15px 30px;
-  border: 1px solid #e5dfdd;
-  border-radius: 5px 0 0 5px;
-  outline: 0 !important;
-  font-size: 14px;
-  color: #1a0a03;
-  background: #fef8f6;
-  font-weight: 400;
+.email {
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    background: #fef8f6;
+    padding: 15px 30px;
+    border: 1px solid #e5dfdd;
+    border-radius: 5px 0 0 5px;
+    outline: 0 !important;
+    font-size: 14px;
+    color: $text-color;
+    font-weight: 400;
+    width: 220px;
+    display: block;
+  }
 }

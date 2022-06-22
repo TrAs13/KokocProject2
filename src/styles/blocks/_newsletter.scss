@@ -1,24 +1,24 @@
-.newsletter-wrapper{
+.newsletter-wrapper {
   display: flex;
   // flex-wrap: wrap;
   border-radius: 10px;
-  background: #F2F6FB;
+  background: #f2f6fb;
 
-  &__right{
+  &__right {
     padding: 63px;
   }
 }
 
-.sign-up{
-  &__title{
-    font-family: 'Source Serif Pro', serif;
+.sign-up {
+  &__title {
+    font-family: "Source Serif Pro", serif;
     font-size: 31px;
     margin-bottom: 20px;
   }
 
-  &__subtitle{
+  &__subtitle {
     font-style: normal;
-    color: #1A0A03;
+    color: $text-color;
     opacity: 80%;
     font-weight: 400;
     font-size: 18px;
@@ -26,24 +26,24 @@
   }
 }
 
-.sign-input{
+.email-form {
   display: flex;
 
-
-  &__input{
+  &__input {
     padding: 15px 30px;
     border: 1px solid #e5dfdd;
     border-radius: 5px 0 0 5px;
     outline: 0 !important;
     font-size: 14px;
-    color: #1a0a03;
+    color: $text-color;
     font-weight: 400;
     min-width: 360px;
-    background: #F2F6FB;
+    background: #f2f6fb;
+    display: block;
   }
 }
 
-.newsletter--img{
+.newsletter--img {
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
