@@ -1,6 +1,6 @@
 body {
   background: url(../../images/Rectangle.png) no-repeat;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   // font-family: 'Source Serif Pro', serif;
 
   overflow-x: hidden;
@@ -18,16 +18,16 @@ a {
   color: black;
 }
 
-.sup-title{
-  font-family: 'Source Serif Pro', serif;
-  color: #ee5514;
+.sup-title {
+  font-family: "Source Serif Pro", serif;
+  color: $main-color;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 20px;
 }
 
-.sub-title{
-  font-family: 'Source Serif Pro', serif;
+.sub-title {
+  font-family: "Source Serif Pro", serif;
   font-size: 44px;
   margin-bottom: 25px;
 }

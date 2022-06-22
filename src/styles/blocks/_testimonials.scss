@@ -1,5 +1,5 @@
 .testimonials {
-  margin: 140px 0;
+  margin-bottom: 140px;
 
   &__main {
     display: flex;
@@ -78,7 +78,7 @@
     height: 100px;
     margin-bottom: 30px;
     border-radius: 50%;
-    border: 2px solid#ee5514;
+    border: 2px solid $main-color;
   }
 
   &__apostrof {
@@ -91,7 +91,7 @@
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 22px;
-    font-family: 'Source Serif Pro', serif;
+    font-family: "Source Serif Pro", serif;
   }
 
   &__paragraph {

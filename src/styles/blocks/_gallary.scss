@@ -1,13 +1,13 @@
 .gallary {
-  margin-bottom: 140px;
-  &__title{
+  margin-bottom: 136px;
+  &__title {
     letter-spacing: 1.5px;
     line-height: 150%;
   }
 }
 
 .gal-categories {
-  color: #1a0a03;
+  color: $text-color;
   font-size: 18px;
   display: flex;
   gap: 35px;
@@ -15,10 +15,6 @@
 
   letter-spacing: 2px;
   line-height: 90%;
-
-  &__title{
-    
-  }
 }
 
 .gal-cat-items {
@@ -31,7 +27,7 @@
     position: relative;
 
     &:hover {
-      color: #ee5514;
+      color: $main-color;
       transition: 0.2s;
 
       &:after {
@@ -51,7 +47,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background-color: #ee5514;
+      background-color: $main-color;
       content: "";
       transition: width 0.5s ease-out;
     }
@@ -118,7 +114,7 @@
     margin-bottom: 33px;
 
     &:hover {
-      border: 2px solid #ee5514;
+      border: 2px solid $main-color;
     }
   }
 
@@ -129,7 +125,7 @@
     margin-bottom: 14px;
   }
 
-  &__size{
+  &__size {
     margin-bottom: 12px;
   }
 

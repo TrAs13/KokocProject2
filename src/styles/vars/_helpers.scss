@@ -1,4 +1,0 @@
-@function px2em($value, $base) {
-  $remValue: calc($value / $base) + em; 
-  @return $remValue;
-}
