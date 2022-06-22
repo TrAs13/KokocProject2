@@ -2,12 +2,12 @@
   .main-screen__left
     .tagline
       h1.tagline__sup
-        | Life is better in running 
+        | Life is better in running
         span.oranje shoes
         |.
     .tagline__sub
       | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices
-      
+
   .main-screen__right
     -let images = ['../images/sneaker1.png', '../images/sneaker3.png']
     +slider(images)
@@ -21,7 +21,7 @@
           .select__title(data-default='Puma') Puma
           #1.select__content
             input#singleSelect0.select__input(type='radio' name='singleSelect')
-            label.select__label(for='singleSelect0') Puma 
+            label.select__label(for='singleSelect0') Puma
 
             input#singleSelect1.select__input(type='radio' name='singleSelect')
             label.select__label(for='singleSelect1') Puma
@@ -82,4 +82,4 @@
 
           input#singleSelect16.select__input(type='radio' name='singleSelect')
           label.select__label(for='singleSelect16') $450
-    +button('Buy now','large','primary',false)
+    +button('Buy now')

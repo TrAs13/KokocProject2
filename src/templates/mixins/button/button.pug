@@ -1,2 +1,2 @@
-mixin button(title, size, theme, disabled=false)
-  button.btn(class='btn--'+ theme + ' ' + 'btn--'+ size, disabled = disabled)= title
+mixin button(title, formed='')
+  button.btn(class='btn'+ formed)= title

@@ -15,8 +15,8 @@ html(lang='en')
           a.nav__link(href='#') Feature
           a.nav__link(href='#') Gallary
       .second-section
-        +button('Buy now','large','primary',false)
-    main.main.container 
+        +button('Buy now')
+    main.main.container
       block main
     footer.footer
       .container
@@ -52,14 +52,10 @@ html(lang='en')
             .contact__title.footer-title Contact us
             p.contact__text Lorem ipsum dolor sit amet consectetur adipiscin.
             .contact__input
-              form(action="#" method="post") 
+              form(action="#" method="post")
                 input.input(type="email" placeholder="Mail address")
-                +button('Send','large','primary',false)
+                +button('Send','--form')
         .sub-footer Copyright 2021 The PUMA All Rights Reserved.
-
-              
-            
-            
     script(src="https://code.jquery.com/jquery-3.6.0.min.js")
     script(src="../js/vendors.js")
     script(src="../js/main.js")
