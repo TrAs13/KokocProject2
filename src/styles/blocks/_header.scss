@@ -9,11 +9,15 @@
 .nav {
   display: flex;
 
+  @media screen and (max-width: 768px) {
+  }
   &__link {
     margin-right: 40px;
     transition: 0.1s linear;
     opacity: 70%;
-
+    @media screen and (max-width: 768px) {
+      margin-right: 5%;
+    }
     &:hover {
       color: $main-color;
     }
@@ -24,8 +28,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  @media screen and (max-width: 768px) {
+      margin-right: 10%;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 60%;
+    }
   &__img {
     margin-right: 101px;
+    @media screen and (max-width: 768px) {
+      margin-right: 5%;
+    }
   }
 }
