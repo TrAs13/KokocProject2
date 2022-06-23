@@ -38,7 +38,7 @@
 }
 
 .slick-next {
-  right: -5%;
+  right: -3%;
   top: 38%;
   z-index: 10;
 
@@ -83,4 +83,16 @@
       opacity: 0.8;
     }
   }
+}
+
+@media screen and (max-width: 980px) {
+  .slider{
+    display: none;
+  }
+
+  .border{
+    display: none;
+  }
+
+  
 }
