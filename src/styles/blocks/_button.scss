@@ -5,6 +5,10 @@
   font-size: $f-size;
   border-radius: $b-radius;
   padding: 15px 30px;
+  @media screen and (max-width: 768px) {
+      padding: 10px 20px;
+      font-size: $small;
+    }
   line-height: 160%;
 
   &:hover {

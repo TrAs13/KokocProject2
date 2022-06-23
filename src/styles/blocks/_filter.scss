@@ -6,6 +6,9 @@
 .filter {
   background: #fff;
   padding: 32px 55px;
+  @media screen and (max-width: 880px) {
+      padding: 16px 2px;
+    }
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.03);
   max-width: max-content;
@@ -14,6 +17,9 @@
 
 .form {
   display: flex;
+  @media screen and (max-width: 880px) {
+    justify-content: space-between;
+  }
 }
 
 .select {
@@ -21,6 +27,13 @@
   width: 150px;
   height: 65px;
   padding: 0 10px;
+  @media screen and (max-width: 880px) {
+    width: 100px;
+  }
+
+  @media screen and (max-width: 568px) {
+    width: 80px;
+  }
 
   &[data-state="active"] {
     .select__title {
@@ -73,6 +86,13 @@
     position: absolute;
     top: 79%;
     right: 30%;
+    @media screen and (max-width: 880px) {
+      right: 20%;
+    }
+
+    @media screen and (max-width: 568px) {
+      right: 5%;
+    }
 
     display: block;
     width: 10px;
@@ -179,10 +199,4 @@
   .filter{
     max-width: none;
   }
-
-  .form{
-    justify-content: center;
-  }
-
- 
 }
