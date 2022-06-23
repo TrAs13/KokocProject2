@@ -140,3 +140,35 @@
     font-weight: 500;
   }
 }
+
+@media screen and (max-width: 1124px) {
+  .sl-gal-item__img {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .gallary {
+    &__title {
+      text-align: center;
+    }
+
+    &__description {
+      text-align: center;
+    }
+  }
+
+  .sub-title {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .slick-prev {
+    display: none;
+  }
+
+  .slick-next {
+    display: none;
+  }
+}

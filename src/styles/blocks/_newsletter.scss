@@ -48,3 +48,42 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+@media screen and (max-width: 1100px) {
+  .newsletter-wrapper {
+    display: flex;
+    // flex-wrap: wrap;
+    border-radius: 10px;
+    background: #f2f6fb;
+
+    &__right {
+      // padding: 30px;
+      max-width: 600px;
+    }
+  }
+  .email-form {
+    &__input {
+      min-width: 140px;
+    }
+  }
+
+  .newsletter--img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .newsletter--img {
+    display: none;
+  }
+
+  .newsletter-wrapper {
+
+    &__right{
+      max-width: none;
+    }
+    justify-content: center;
+  }
+}
+

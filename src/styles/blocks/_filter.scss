@@ -174,3 +174,15 @@
     color: #ffffff;
   }
 }
+
+@media screen and (max-width: 980px) {
+  .filter{
+    max-width: none;
+  }
+
+  .form{
+    justify-content: center;
+  }
+
+ 
+}

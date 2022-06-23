@@ -10,3 +10,11 @@
   text-align: center;
   margin-bottom: 60px;
 }
+
+@media screen and (max-width: 980px) {
+  .cards-wrapper{
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

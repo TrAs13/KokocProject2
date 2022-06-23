@@ -42,3 +42,22 @@
   position: absolute;
   left: 56%;
 }
+
+@media screen and (max-width: 1124px) {
+  .border {
+    left: 46%;
+    padding-right: 0;
+  }
+
+  .main-screen__right{
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-screen{
+    justify-content: center;
+  }
+
+ 
+}
