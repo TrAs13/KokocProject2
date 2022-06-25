@@ -9,11 +9,16 @@ html(lang='en')
     header.header.container
       .first-section
         img.first-section__img(src="../../images/puma.png", alt="")
-        nav.nav
-          a.nav__link(href='#') Menu
-          a.nav__link(href='#') About
-          a.nav__link(href='#') Feature
-          a.nav__link(href='#') Gallary
+        .menu
+          .icon
+            span
+            span
+            span
+          nav.nav
+            a.nav__link(href='#') Menu
+            a.nav__link(href='#') About
+            a.nav__link(href='#') Feature
+            a.nav__link(href='#') Gallary
       .second-section
         +button('Buy now')
     main.main.container
@@ -58,6 +63,7 @@ html(lang='en')
                 input.email__input(type="email" placeholder="Mail address")
                 +button('Send','--form')
         .sub-footer Copyright 2021 The PUMA All Rights Reserved.
-    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    //- script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
     script(src="../js/vendors.js")
     script(src="../js/main.js")
