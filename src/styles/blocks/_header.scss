@@ -11,6 +11,7 @@
 
 .nav {
   display: flex;
+  transition: .2s ease-in-out;
   @media screen and (max-width: 540px) {
     position: absolute;
     flex-direction: column;
@@ -59,14 +60,19 @@
   }
   @media screen and (max-width: 540px) {
     margin-right: 0;
+    flex: 0 0 55%;
   }
   &__img {
     margin-right: 101px;
     @media screen and (max-width: 768px) {
       margin-right: 5%;
     }
+    @media screen and (max-width: 540px) {
+      margin-right: 0;
+    }
   }
 }
+
 
 .icon {
   display: none;

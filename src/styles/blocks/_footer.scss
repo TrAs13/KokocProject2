@@ -24,7 +24,9 @@
   font-weight: 400;
   font-size: 18px;
   color: $text-color;
-  // margin-right: 77px;
+  @media screen and (max-width: 1124px) {
+    text-align: center;
+  }
 
   &__logo {
     margin-bottom: 5px;
@@ -34,6 +36,9 @@
     opacity: 70%;
     margin-bottom: 20px;
     max-width: 203px;
+    @media screen and (max-width: 1124px) {
+      max-width: none;
+    }
   }
 
   &__email {
@@ -42,10 +47,6 @@
     display: block;
     margin-bottom: 10px;
   }
-}
-
-.support {
-  // margin-right: 124px;
 }
 
 .contacts {
@@ -73,6 +74,12 @@
 
 .contact {
   max-width: 320px;
+  @media screen and (max-width: 1124px) {
+    max-width: none;
+  }
+  @media screen and (max-width: 540px) {
+    text-align: center;
+  }
 }
 
 .footer-title {
@@ -80,10 +87,16 @@
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 31px;
+  @media screen and (max-width: 1124px) {
+    text-align: center;
+  }
 }
 
 .footer-list {
   list-style: none;
+  @media screen and (max-width: 1124px) {
+    text-align: center;
+  }
 }
 
 .footer-li {
@@ -112,6 +125,9 @@
 .email {
   &__form {
     display: flex;
+    @media screen and (max-width: 1124px) {
+      justify-content: center;
+    }
   }
 
   &__input {
@@ -125,35 +141,5 @@
     font-weight: 400;
     width: 220px;
     display: block;
-  }
-}
-
-@media screen and (max-width: 1124px) {
-  .footer-wrapper {
-    justify-content: center;
-  }
-
-  .contact{
-    max-width: none;
-  }
-
-  .footer-title{
-    text-align: center;
-  }
-  
-  .footer-list{
-    text-align: center;
-  }
-
-  .links{
-    text-align: center;
-
-    &__addres{
-      max-width: none;
-    }
-  }
-
-  .email__form{
-    justify-content: center;
   }
 }
