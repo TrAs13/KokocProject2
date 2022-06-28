@@ -1,6 +1,7 @@
 .cards {
   margin-bottom: 142px;
 }
+
 .cards-wrapper {
   display: flex;
   gap: 30px;
@@ -12,7 +13,7 @@
 }
 
 @media screen and (max-width: 980px) {
-  .cards-wrapper{
+  .cards-wrapper {
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;

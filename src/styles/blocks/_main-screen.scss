@@ -11,6 +11,7 @@
     width: 366px;
     padding-top: 77px;
   }
+
   &__right {
     position: absolute;
     max-width: 500px;
@@ -21,8 +22,9 @@
 
 .tagline {
   line-height: 1.2;
+
   &__sup {
-    font-family: "Source Serif Pro", serif;
+    font-family: 'Source Serif Pro', serif;
     font-size: 61px;
     margin-bottom: 20px;
   }

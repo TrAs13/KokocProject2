@@ -1,18 +1,21 @@
 @mixin makeButton($bg-color, $t-color, $f-size, $b-radius) {
   background-color: $bg-color;
-  border: none;
+  border: 0;
   color: $t-color;
   font-size: $f-size;
   border-radius: $b-radius;
   padding: 15px 30px;
+
   @media screen and (max-width: 768px) {
-      padding: 10px 20px;
-      font-size: $small;
-    }
-    @media screen and (max-width: 540px) {
-      padding: 10px 20px;
-      font-size: $medium;
-    }
+    padding: 10px 20px;
+    font-size: $small;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 10px 20px;
+    font-size: $medium;
+  }
+
   line-height: 160%;
 
   &:hover {

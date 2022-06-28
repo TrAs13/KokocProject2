@@ -6,11 +6,13 @@
 .filter {
   background: #fff;
   padding: 32px 55px;
+
   @media screen and (max-width: 880px) {
-      padding: 16px 2px;
-    }
+    padding: 16px 2px;
+  }
+
   border-radius: 5px;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.03);
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .03);
   max-width: max-content;
   margin-bottom: 136px;
 
@@ -43,12 +45,12 @@
     width: 100px;
   }
   @media screen and (max-width: 540px) {
-    border: 1px solid #333333;
+    border: 1px solid #333;
     border-radius: 5px;
     margin: 10px 0;
   }
 
-  &[data-state="active"] {
+  &[data-state='active'] {
     .select__title {
       &::before {
         transform: translate(-3px, -50%) rotate(-45deg);
@@ -97,7 +99,7 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
 
     position: absolute;
     top: 79%;
@@ -114,13 +116,14 @@
     width: 10px;
     height: 2px;
 
-    transition: all 0.3s ease-out;
+    transition: all .3s ease-out;
 
     background-color: $main-color;
     opacity: 35%;
 
     transform: translate(-3px, -50%) rotate(45deg);
   }
+
   &::after {
     transform: translate(3px, -50%) rotate(-45deg);
   }
@@ -134,6 +137,7 @@
     }
   }
 }
+
 .reset {
   display: flex;
   width: 230px;
@@ -144,27 +148,28 @@
   border: solid 1px #c7ccd1;
   border-radius: 5px;
 
-  transition: all 0.2s ease-out;
+  transition: all .2s ease-out;
 
   cursor: pointer;
 
   font-weight: bold;
 
-  background-color: #ffffff;
-  color: #333333;
+  background-color: #fff;
+  color: #333;
 
   &:hover {
     background-color: $main-color;
-    color: #ffffff;
+    color: #fff;
   }
 }
+
 .select__content {
   position: absolute;
   top: 70px;
-  left: 0px;
+  left: 0;
   @media screen and (max-width: 540px) {
     left: -2px;
-    border: 1px solid #333333;
+    border: 1px solid #333;
     border-radius: 5px;
   }
 
@@ -176,29 +181,30 @@
     align-items: center;
   }
 
-  background-color: #ffffff;
-
-  // border: 1px solid #c7ccd1;
-  border-top: none;
+  background-color: #fff;
+  border-top: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
 
   opacity: 0;
   z-index: 8;
 }
+
 .select__input {
   display: none;
 
   &:checked + label {
     background-color: #dedede;
   }
+
   &:disabled + label {
-    opacity: 0.6;
+    opacity: .6;
     pointer-events: none;
   }
 }
+
 .select__label {
   display: flex;
   align-items: center;
@@ -206,22 +212,18 @@
   height: 40px;
   max-height: 0;
   padding: 0 16px;
-
-  transition: all 0.2s ease-out;
-
+  transition: all .2s ease-out;
   cursor: pointer;
-
   overflow: hidden;
 
   &:hover {
     background-color: $main-color !important;
-
-    color: #ffffff;
+    color: #fff;
   }
 }
 
 @media screen and (max-width: 980px) {
-  .filter{
+  .filter {
     max-width: none;
   }
 }

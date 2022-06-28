@@ -21,9 +21,11 @@
       margin: auto;
       margin-top: 20px;
     }
+
     .img {
       max-width: 100%;
       position: relative;
+
       img {
         max-width: 100%;
       }
@@ -49,43 +51,47 @@
     border-radius: 50%;
     position: relative;
     border: 0;
+
     &:hover {
       background-color: rgba(225, 193, 193, .77);
       cursor: pointer;
-      &::after{
+
+      &::after {
         filter: brightness(140%);
       }
     }
     z-index: 20;
-  }
 
-  &__button::after {
-    content: "";
-    position: absolute;
-    left: 40%;
-    top: 30%;
-    border: 20px solid transparent;
-    border-left: 30px solid $main-color;
-    @media screen and (max-width: 560px) {
-      border: 10px solid transparent;
-      border-left: 15px solid $main-color;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 40%;
+      top: 30%;
+      border: 20px solid transparent;
+      border-left: 30px solid $main-color;
+
+      @media screen and (max-width: 560px) {
+        border: 10px solid transparent;
+        border-left: 15px solid $main-color;
+      }
     }
   }
 }
 
 .tags {
   max-width: 340px;
+
   @media screen and (max-width: 880px) {
-      max-width: 100%;
-    }
-  font-family: "Source Serif Pro", serif;
+    max-width: 100%;
+  }
+  font-family: 'Source Serif Pro', serif;
 
   &__video {
     margin-bottom: 15px;
   }
 
   &__parag {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: $text-color;
     font-size: 16px;
     opacity: 70%;

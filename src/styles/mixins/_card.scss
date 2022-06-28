@@ -1,11 +1,11 @@
 .item {
   padding: 56px 55px;
   background: #fff;
-  box-shadow: 0px 5px 45px -13px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 5px 45px -13px rgba(34, 60, 80, .2);
   border-radius: 10px;
   text-align: center;
   max-width: 360px;
-  transition: 0.2s linear; /* Время изменения */
+  transition: .2s linear;
 
   &:hover {
     background: #fdeee7;
@@ -23,13 +23,13 @@
   }
 
   &__title {
-    font-family: "Source Serif Pro", serif;
+    font-family: 'Source Serif Pro', serif;
     font-size: 22px;
     margin-bottom: 14px;
   }
 
   &__sub-title {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 22px;
@@ -37,10 +37,11 @@
 }
 
 .link {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: $main-color;
+
   img {
     margin-left: 11px;
   }
