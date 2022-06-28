@@ -29,7 +29,7 @@ const clean = () => {
  */
 const copyImg = () => {
   return gulp
-    .src(`${SRC_PATH}/assets/*.*`)
+    .src(`${SRC_PATH}/assets/**/*.*`)
     .pipe(gulp.dest(`${DIST_PATH}/images/`));
 };
 
@@ -174,7 +174,7 @@ gulp.task(
       copyImg,
       copyFonts,
       scripts,
-      vendorsScripts,
+      vendorsScripts
     ),
     gulp.parallel(watchers, server)
   )
