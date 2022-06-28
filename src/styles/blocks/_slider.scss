@@ -12,7 +12,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border: none;
+  border: 0;
   background-color: none;
   padding: 0;
   cursor: pointer;
@@ -33,7 +33,7 @@
   display: none;
 
   &::before {
-    content: " ";
+    content: '';
   }
 }
 
@@ -43,10 +43,10 @@
   z-index: 10;
 
   &::before {
-    content: "";
+    content: '';
     width: 70px;
     height: 70px;
-    background-image: url(../../images/next.svg);
+    background-image: url('../../images/next.svg');
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
@@ -70,7 +70,7 @@
 
   button {
     padding: 0;
-    border: none;
+    border: 0;
     background-color: rgb(216, 213, 213);
     cursor: pointer;
     border-radius: 50%;
@@ -80,17 +80,17 @@
 
     &:hover,
     &:focus {
-      opacity: 0.8;
+      opacity: .8;
     }
   }
 }
 
 @media screen and (max-width: 980px) {
-  .slider{
+  .slider {
     display: none;
   }
 
-  .border{
+  .border {
     display: none;
   }
 }
