@@ -17,7 +17,7 @@
     flex-direction: column;
     // left: 43%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, .9);
     z-index: 1000;
     overflow: auto;
     opacity: 0;
@@ -27,7 +27,7 @@
 
   &__link {
     margin-right: 40px;
-    transition: 0.1s linear;
+    transition: .1s linear;
     opacity: 70%;
     @media screen and (max-width: 768px) {
       margin-right: 5%;
@@ -42,6 +42,7 @@
       color: #fff;
       opacity: 100%;
     }
+
     &:hover {
       color: $main-color;
     }
@@ -60,8 +61,10 @@
   }
   @media screen and (max-width: 540px) {
     margin-right: 0;
-    flex: 0 0 55%;
+    // flex: 0 0 55%;
+    width: 100%;
   }
+
   &__img {
     margin-right: 101px;
     @media screen and (max-width: 768px) {
@@ -73,6 +76,11 @@
   }
 }
 
+.second-section {
+  @media screen and (max-width: 540px) {
+    display: none;
+  }
+}
 
 .icon {
   display: none;
@@ -83,7 +91,6 @@
   height: 35px;
   position: relative;
   cursor: pointer;
-  // left: 50%;
 
   span {
     display: block;
@@ -93,20 +100,24 @@
     background: #333;
     border-radius: 9px;
     transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
-  }
+    transition: .25s ease-in-out;
 
-  span:nth-child(1) {
-    top: 0;
-  }
-  span:nth-child(2) {
-    top: 13px;
-  }
-  span:nth-child(3) {
-    top: 26px;
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 13px;
+    }
+
+    &:nth-child(3) {
+      top: 26px;
+    }
   }
 }
 
-.menu.menu-open .nav {
-  opacity: 1;
+.menu-open {
+  .nav {
+    opacity: 1;
+  }
 }

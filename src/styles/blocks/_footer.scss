@@ -1,6 +1,6 @@
 .footer {
   background: #fef8f6;
-  padding: 100px 0 30px 0;
+  padding: 100px 0 30px;
   // min-height: 441px;
 }
 
@@ -14,6 +14,7 @@
   &__left {
     display: flex;
   }
+
   &__right {
     display: flex;
   }
@@ -119,7 +120,7 @@
   padding-top: 30px;
   color: $text-color;
   opacity: 70%;
-  box-shadow: 0px 5px 3px -6px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: 0 5px 3px -6px rgba(34, 60, 80, .6) inset;
 }
 
 .email {
