@@ -106,7 +106,7 @@
       top: 0;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2), :nth-child(3){
       top: 13px;
     }
 
@@ -119,5 +119,22 @@
 .menu-open {
   .nav {
     opacity: 1;
+  }
+  span:nth-child(1){
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  span:nth-child(2){
+    transform: rotate(45deg);
+  }
+  span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 41%;
+  }
+  span:nth-child(4){
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
 }
