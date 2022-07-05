@@ -16,10 +16,16 @@ html(lang='en')
             span
             span
           nav.nav
-            a.nav__link(href='#') Menu
-            a.nav__link(href='#') About
-            a.nav__link(href='#') Feature
-            a.nav__link(href='#') Gallary
+            ul.nav__list
+              li.nav__li
+                a.nav__link(href='#') Menu
+              li.nav__li
+                a.nav__link(href='#') About
+              li.nav__li
+                a.nav__link(href='#') Feature
+              li.nav__li
+                a.nav__link(href='#') Gallary
+           
       .second-section
         +button('Buy now')
     main.main.container
@@ -32,10 +38,14 @@ html(lang='en')
             p.links__addres 10 New Town Street, V2 5NW, Newstate, USA.
             a.links__email(href="mailto:shovasatkhira88@gmail.com") shovasatkhira88@gmail.com
             .links__contacts.contacts
-              img.contacts__img(src="../../images/footer/facebook.svg", alt="")
-              img.contacts__img(src="../../images/footer/instagram.svg", alt="")
-              img.contacts__img(src="../../images/footer/twitter.svg", alt="")
-              img.contacts__img(src="../../images/footer/google.svg", alt="")
+              a.contacts__link(href="https://ru-ru.facebook.com/" target="_blank")
+                img.contacts__img(src="../../images/footer/facebook.svg", alt="")
+              a.contacts__link(href="https://www.instagram.com/" target="_blank")
+                img.contacts__img(src="../../images/footer/instagram.svg", alt="")
+              a.contacts__link(href="https://twitter.com/" target="_blank")
+                img.contacts__img(src="../../images/footer/twitter.svg", alt="")
+              a.contacts__link(href="https://www.google.com/" target="_blank")
+                img.contacts__img(src="../../images/footer/google.svg", alt="")
           .footer-wrapper__services.services
             .services__title.footer-title Our services
             ul.services__list.footer-list

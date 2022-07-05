@@ -13,6 +13,11 @@
 
   &__left {
     width: 366px;
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      text-align: center;
+      padding-top: 50px;
+    }
     padding-top: 77px;
   }
 

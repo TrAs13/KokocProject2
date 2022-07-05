@@ -18,6 +18,35 @@
   &__right {
     display: flex;
   }
+
+  &__links{
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      
+    }
+  }
+  &__services{
+    @media screen and (max-width: 980px) {
+      width: 45%;
+    }
+    @media screen and (max-width: 540px) {
+      width: 100%;
+    }
+  }
+  &__support{
+    @media screen and (max-width: 980px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 540px) {
+      width: 100%;
+    }
+  }
+  &__contact{
+    @media screen and (max-width: 980px) {
+      width: 100%;
+    }
+  }
+
 }
 
 .links {
@@ -26,6 +55,10 @@
   font-size: 18px;
   color: $text-color;
   @media screen and (max-width: 1124px) {
+    // text-align: center;
+  }
+  @media screen and (max-width: 980px) {
+    max-width: none;
     text-align: center;
   }
 
@@ -84,6 +117,12 @@
   }
   @media screen and (max-width: 540px) {
     text-align: center;
+  }
+
+  &__text {
+    @media screen and (max-width: 980px) {
+      text-align: center;
+    }
   }
 }
 
