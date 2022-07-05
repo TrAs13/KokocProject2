@@ -30,7 +30,7 @@
   margin-top: 1em;
 
   @media screen and (max-width: 768px) {
-    max-width: 65%;
+    max-width: 100%;
   }
 
   .slick-arrow {
@@ -43,7 +43,7 @@
     top: 50%;
     transform: translateY(-50%);
     border: 0;
-    background-color: none;
+    background-color: transparent;
     padding: 0;
     cursor: pointer;
     font-size: 0;
