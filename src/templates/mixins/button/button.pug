@@ -1,2 +1,5 @@
 mixin button(title, formed='')
-  button.btn(class='btn'+ formed)= title
+  if formed
+    button.btn(class='btn'+ formed)= title
+  else
+    button.btn= title
