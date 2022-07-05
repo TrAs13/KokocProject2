@@ -29,6 +29,7 @@
     font-size: $small;
   }
   display: flex;
+  flex-wrap: wrap;
   gap: 35px;
   list-style-type: none;
   cursor: pointer;
