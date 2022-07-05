@@ -12,21 +12,23 @@
   }
 
   &__circle {
-    padding: 36px;
     background: #f6e9fd;
     border-radius: 50%;
-    text-align: center;
     width: 140px;
     height: 140px;
     margin: 0 auto;
     margin-bottom: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__title {
     font-family: 'Source Serif Pro', serif;
     font-size: 22px;
-    margin-bottom: 14px;
+    margin: 14px;
   }
+  
 
   &__sub-title {
     font-family: 'Poppins', sans-serif;

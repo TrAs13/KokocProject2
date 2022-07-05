@@ -2,4 +2,4 @@ mixin button(title, formed='')
   if formed
     button.btn(class='btn'+ formed)= title
   else
-    button.btn= title
+    button.btn(type='button')= title

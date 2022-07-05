@@ -2,7 +2,8 @@ mixin card(img_src, title, subTitle)
   .cards-wrapper__item.item
       .item__circle.circle
         img.circle___img(src=img_src, alt="")
-      .item__title= title
+      .item__title.sup
+        b.sup__text=title
       .item__sub-title= subTitle
       .item__link
         a.link(href="#")
