@@ -1,3 +1,5 @@
+$ref-color: #000;
+
 body {
   background: url('../../images/main-screen/Rectangle.png') no-repeat;
   font-family: 'Poppins', sans-serif;
@@ -15,7 +17,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: $ref-color;
 }
 
 .sup-title {

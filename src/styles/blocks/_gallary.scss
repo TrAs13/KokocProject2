@@ -9,7 +9,7 @@ $gal-border-color: rgba(26, 10, 3, .1);
   }
 
   &__description {
-    margin-top: 13px;
+    margin-top: 11px;
   }
 }
 
@@ -83,7 +83,7 @@ $gal-border-color: rgba(26, 10, 3, .1);
     height: 170px;
     transition: .2s linear;
     margin-bottom: 33px;
-    margin-right: 130px;
+
     &:hover {
       border: 2px solid $main-color;
     }
@@ -103,7 +103,7 @@ $gal-border-color: rgba(26, 10, 3, .1);
   &__price {
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   &__span {
@@ -116,6 +116,8 @@ $gal-border-color: rgba(26, 10, 3, .1);
 }
 
 .slider-gallary {
+  margin: 0 -15px;
+
   .slick-arrow {
     @media screen and (max-width: 768px) {
       display: none !important ;
@@ -139,8 +141,19 @@ $gal-border-color: rgba(26, 10, 3, .1);
     }
   }
 
+  .slick-slide {
+    padding: 0 15px;
+
+    img {
+      @media screen and (max-width: 560px) {
+        display: inline;
+        margin-right: 0;
+      }
+    }
+  }
+
   .slick-prev {
-    left: 87%;
+    left: 86%;
     top: -24%;
     display: block;
 
@@ -155,18 +168,8 @@ $gal-border-color: rgba(26, 10, 3, .1);
     }
   }
 
-  .slick-slide {
-    img {
-      @media screen and (max-width: 560px) {
-        display: inline;
-        margin-right: 0;
-      }
-    }
-
-  }
-
   .slick-next {
-    right: 2.5%;
+    right: 3.6%;
     top: -24%;
 
     &::before {

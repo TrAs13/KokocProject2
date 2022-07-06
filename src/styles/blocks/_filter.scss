@@ -1,3 +1,5 @@
+$filter-shadow: rgba(34, 60, 80, .03);
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -18,17 +20,17 @@
     padding: 35px;
   }
 
-  background: #fff;
+  background: $secondary-color;
   padding: 29px 20px;
   box-sizing: border-box;
   border-radius: 5px;
-  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .03);
+  box-shadow: 4px 4px 8px 0 $filter-shadow;
   @media screen and (max-width: 768px) {
     box-shadow: none;
   }
   max-width: 792px;
   margin-bottom: 136px;
-  
+
   &__item {
     box-sizing: border-box;
     display: flex;
@@ -71,7 +73,7 @@
     color: $text-color;
     border: 0;
     appearance: none;
-    background-image: url(../../images/main-screen/filter-arrow.png);
+    background-image: url('../../images/main-screen/filter-arrow.png');
     background-repeat: no-repeat;
     background-position: right 0% top 50%;
     width: calc(100% + 22px);
