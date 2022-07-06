@@ -7,6 +7,10 @@ $gal-border-color: rgba(26, 10, 3, .1);
     letter-spacing: 1.5px;
     line-height: 150%;
   }
+
+  &__description {
+    margin-top: 13px;
+  }
 }
 
 .gal-categories {
@@ -79,7 +83,7 @@ $gal-border-color: rgba(26, 10, 3, .1);
     height: 170px;
     transition: .2s linear;
     margin-bottom: 33px;
-
+    margin-right: 130px;
     &:hover {
       border: 2px solid $main-color;
     }
@@ -136,8 +140,8 @@ $gal-border-color: rgba(26, 10, 3, .1);
   }
 
   .slick-prev {
-    left: 86%;
-    top: -28%;
+    left: 87%;
+    top: -24%;
     display: block;
 
     &::before {
@@ -162,8 +166,8 @@ $gal-border-color: rgba(26, 10, 3, .1);
   }
 
   .slick-next {
-    right: 4%;
-    top: -28%;
+    right: 2.5%;
+    top: -24%;
 
     &::before {
       content: '';
