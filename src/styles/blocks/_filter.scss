@@ -4,226 +4,84 @@
 }
 
 .filter {
-  background: #fff;
-  padding: 32px 55px;
-
-  @media screen and (max-width: 880px) {
-    padding: 16px 2px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 980px) {
+    margin: 0 auto 136px ;
+  }
+  @media screen and (max-width: 792px) {
+    margin: 0 -20px 136px ;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 -20px;
+    flex-direction: column;
+    padding: 35px;
   }
 
+  background: #fff;
+  padding: 29px 20px;
+  box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, .03);
-  max-width: max-content;
+  @media screen and (max-width: 768px) {
+    box-shadow: none;
+  }
+  max-width: 792px;
   margin-bottom: 136px;
-
-  @media screen and (max-width: 540px) {
-    align-items: center;
-    text-align: center;
-    width: 300px;
-    margin: 0 auto 136px;
-  }
-}
-
-.form {
-  display: flex;
-  @media screen and (max-width: 880px) {
-    justify-content: space-between;
-  }
-
-  @media screen and (max-width: 540px) {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-}
-
-.select {
-  position: relative;
-  width: 150px;
-  height: 65px;
-  padding: 0 10px;
-  @media screen and (max-width: 880px) {
-    width: 100px;
-  }
-  @media screen and (max-width: 540px) {
-    border: 1px solid #333;
-    border-radius: 5px;
-    margin: 10px 0;
-  }
-
-  &[data-state='active'] {
-    .select__title {
-      &::before {
-        transform: translate(-3px, -50%) rotate(-45deg);
-      }
-
-      &::after {
-        transform: translate(3px, -50%) rotate(45deg);
-      }
-    }
-
-    .select__content {
-      opacity: 1;
-    }
-
-    .select__label + .select__input + .select__label {
-      max-height: 40px;
-      border-top-width: 1px;
+  
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 60px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $main-color;
     }
   }
-}
 
-.select__name {
-  font-size: 16px;
-  margin-bottom: 5px;
-  font-weight: 400;
-  opacity: 70%;
-  color: $text-color;
-}
-
-.select__title {
-  color: $text-color;
-  font-weight: 500;
-  font-size: 18px;
-  align-items: center;
-  margin-top: 11px;
-  width: 100%;
-  height: 100%;
-  @media screen and (max-width: 540px) {
-    height: 40%;
-  }
-  // padding: 8px 16px;
-
-  border-radius: 5px;
-
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    content: '';
-
-    position: absolute;
-    top: 79%;
-    right: 30%;
-    @media screen and (max-width: 880px) {
-      right: -5%;
-    }
-
-    @media screen and (max-width: 568px) {
+  &__column {
+    height: 42px;
+    border-right: 1px solid $main-color;
+    @media screen and (max-width: 768px) {
       display: none;
     }
-
-    display: block;
-    width: 10px;
-    height: 2px;
-
-    transition: all .3s ease-out;
-
-    background-color: $main-color;
-    opacity: 35%;
-
-    transform: translate(-3px, -50%) rotate(45deg);
   }
 
-  &::after {
-    transform: translate(3px, -50%) rotate(-45deg);
+  &__name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: $text-color;
+    opacity: 70%;
+    margin-bottom: 12px;
   }
 
-  &:hover {
-    border-color: $main-color;
-
-    &::before,
-    &::after {
-      background-color: $main-color;
-    }
-  }
-}
-
-.reset {
-  display: flex;
-  width: 230px;
-  padding: 8px 16px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-
-  border: solid 1px #c7ccd1;
-  border-radius: 5px;
-
-  transition: all .2s ease-out;
-
-  cursor: pointer;
-
-  font-weight: bold;
-
-  background-color: #fff;
-  color: #333;
-
-  &:hover {
-    background-color: $main-color;
-    color: #fff;
-  }
-}
-
-.select__content {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  @media screen and (max-width: 540px) {
-    left: -2px;
-    border: 1px solid #333;
-    border-radius: 5px;
+  &__select {
+    all: initial;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: $text-color;
+    border: 0;
+    appearance: none;
+    background-image: url(../../images/main-screen/filter-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 0% top 50%;
+    width: calc(100% + 22px);
   }
 
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 6px);
-  @media screen and (max-width: 540px) {
-    width: calc(100% + 5px);
-    align-items: center;
-  }
-
-  background-color: #fff;
-  border-top: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-
-  transition: all .3s ease-out;
-
-  opacity: 0;
-  z-index: 8;
-}
-
-.select__input {
-  display: none;
-
-  &:checked + label {
-    background-color: #dedede;
-  }
-
-  &:disabled + label {
-    opacity: .6;
-    pointer-events: none;
-  }
-}
-
-.select__label {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  max-height: 0;
-  padding: 0 16px;
-  transition: all .2s ease-out;
-  cursor: pointer;
-  overflow: hidden;
-
-  &:hover {
-    background-color: $main-color !important;
-    color: #fff;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .filter {
-    max-width: none;
+  &__option {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: $text-color;
   }
 }
