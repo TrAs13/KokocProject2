@@ -1,8 +1,11 @@
+$news-bg-color: #f2f6fb;
+$news-br-color: #e5dfdd;
+
 .newsletter-wrapper {
   display: flex;
-  
+
   border-radius: 10px;
-  background: #f2f6fb;
+  background: $news-bg-color;
   @media screen and (max-width: 980px) {
     justify-content: center;
     margin: -20px;
@@ -46,14 +49,11 @@
 
 .email-form {
   display: flex;
-  
+
   &__input {
     padding: 15px 30px;
-    @media screen and (max-width: 540px) {
-      // padding: 0;
-     
-    }
-    border: 1px solid #e5dfdd;
+
+    border: 1px solid $news-br-color;
     border-radius: 5px 0 0 5px;
     outline: 0 !important;
     font-size: 14px;
@@ -64,7 +64,7 @@
       width: 100%;
       min-width: 0;
     }
-    background: #f2f6fb;
+    background: $news-bg-color;
     display: block;
   }
 }

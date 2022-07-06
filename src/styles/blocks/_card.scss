@@ -1,18 +1,21 @@
+$bg-circle: #f6e9fd;
+$shadow-color: rgba(34, 60, 80, .2);
+
 .item {
   padding: 56px 55px;
-  background: #fff;
-  box-shadow: 0 5px 45px -13px rgba(34, 60, 80, .2);
+  background: $secondary-color;
+  box-shadow: 0 5px 45px -13px $shadow-color;
   border-radius: 10px;
   text-align: center;
   max-width: 360px;
   transition: .2s linear;
 
   &:hover {
-    background: #fdeee7;
+    background: $bg-color;
   }
 
   &__circle {
-    background: #f6e9fd;
+    background: $bg-circle;
     border-radius: 50%;
     width: 140px;
     height: 140px;
@@ -28,7 +31,7 @@
     font-size: 22px;
     margin: 14px;
   }
-  
+
 
   &__sub-title {
     font-family: 'Poppins', sans-serif;
