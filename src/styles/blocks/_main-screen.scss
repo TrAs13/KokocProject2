@@ -18,7 +18,7 @@
       text-align: center;
       padding-top: 50px;
     }
-    padding-top: 77px;
+    padding-top: 74px;
   }
 
   &__right {
@@ -33,20 +33,24 @@
 }
 
 .tagline {
-  line-height: 1.2;
+  // line-height: 1.2;
 
   &__sup {
     font-family: 'Source Serif Pro', serif;
     font-size: 61px;
-    margin-bottom: 20px;
+    line-height: 120%;
+    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: 600;
   }
 
   &__sub {
-    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
     color: $text-color;
     opacity: 70%;
-    line-height: 1.5;
   }
 }
 
