@@ -14,73 +14,32 @@ section.main-screen
     +slider(images)
   img.border(src="../../images/main-screen/border.png", alt="")
 
-.filter
-  form.form(action="index.html", method="get")
-    .wrapper
-      .select(data-state='')
-          label.select__name(for='1') Brand
-          .select__title(data-default='Puma') Puma
-          #1.select__content
-            input#singleSelect0.select__input(type='radio' name='singleSelect')
-            label.select__label(for='singleSelect0') Puma
 
-            input#singleSelect1.select__input(type='radio' name='singleSelect')
-            label.select__label(for='singleSelect1') Puma
-
-            input#singleSelect2.select__input(type='radio' name='singleSelect')
-            label.select__label(for='singleSelect2') Puma1
-
-            input#singleSelect3.select__input(type='radio' name='singleSelect')
-            label.select__label(for='singleSelect3') Puma2
-
-            input#singleSelect4.select__input(type='radio' name='singleSelect')
-            label.select__label(for='singleSelect4') Puma3
-    .wrapper
-      .select(data-state='')
-        label.select__name(for='2') Person
-        .select__title(data-default='man') man
-        #2.select__content
-          input#singleSelect5.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect5') man
-
-          input#singleSelect6.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect6') man
-
-          input#singleSelect7.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect7') woman
-    .wrapper
-      .select(data-state='')
-        label.select__name(for='3') Size
-        .select__title(data-default='large') large
-        #3.select__content
-          input#singleSelect8.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect8') large
-
-          input#singleSelect9.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect9') large
-
-          input#singleSelect10.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect10') medium
-
-          input#singleSelect11.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect11') small
-    .wrapper
-      .select(data-state='')
-        label.select__name(for='4') Price
-        .select__title(data-default='$150') $150
-        #4.select__content
-          input#singleSelect12.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect12') $150
-
-          input#singleSelect13.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect13') $150
-
-          input#singleSelect14.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect14') $250
-
-          input#singleSelect15.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect15') $350
-
-          input#singleSelect16.select__input(type='radio' name='singleSelect')
-          label.select__label(for='singleSelect16') $450
-    +button('Buy now')
+form.filter(action="index.html", method="get")
+  .filter__item
+    label.filter__name(for='brand') Brand
+    select.filter__select(id='brand')
+      option.filter__option(value="puma" selected) Puma
+      option.filter__option(value="Puma1") Puma1
+  .filter__column
+  .filter__item
+    label.filter__name(for='person') Person
+    select.filter__select(id='person')
+      option.filter__option(value="man" selected) man
+      //- option.filter__option(value="woman") woman
+  .filter__column
+  .filter__item
+    label.filter__name(for='size') Size
+    select.filter__select(id='size')
+      option.filter__option(value="large" selected) large
+      //- option.filter__option(value="medium") medium
+      //- option.filter__option(value="small") small
+  .filter__column
+  .filter__item
+    label.filter__name(for='price') Price
+    select.filter__select(id='price')
+      option.filter__option(value="$150" selected) $150
+      option.filter__option(value="$250") $250
+      option.filter__option(value="$350") $350
+      option.filter__option(value="$450") $450
+  +button('Buy now')
