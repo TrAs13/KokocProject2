@@ -30,5 +30,5 @@
 }
 
 .btn {
-  @include makeButton($main-color, #fff, $large, 5px);
+  @include makeButton($main-color, $secondary-color, $large, 5px);
 }
