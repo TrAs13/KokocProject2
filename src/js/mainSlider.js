@@ -13,7 +13,7 @@ $(function () {
 $(function () {
   $(".slider-gallary").slick({
     dots: false,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplaySpeed: 2000,
