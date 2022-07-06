@@ -10,8 +10,8 @@ $footer-shadow: rgba(34, 60, 80, .6);
 .footer-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 54px;
+  // justify-content: center;
+  margin-bottom: 38px;
   gap: 77px;
 
   &__left {
@@ -49,6 +49,7 @@ $footer-shadow: rgba(34, 60, 80, .6);
   }
 
   &__contact {
+    padding-left: 50px;
     @media screen and (max-width: 980px) {
       width: 100%;
     }
@@ -67,10 +68,12 @@ $footer-shadow: rgba(34, 60, 80, .6);
   }
 
   &__logo {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   &__addres {
+    margin-left: 3px;
+    line-height: 160%;
     opacity: 70%;
     margin-bottom: 20px;
     max-width: 203px;
@@ -83,7 +86,7 @@ $footer-shadow: rgba(34, 60, 80, .6);
     color: $text-color;
     opacity: 80%;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 
     &:hover {
       color: $main-color ;
@@ -102,7 +105,9 @@ $footer-shadow: rgba(34, 60, 80, .6);
   // margin-right: 77px;
 
   &__title {
+    margin-top: 7px;
     margin-bottom: 31px;
+    line-height: 160%;
   }
 
   &__link {
@@ -111,6 +116,10 @@ $footer-shadow: rgba(34, 60, 80, .6);
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__li {
+    line-height: 160%;
   }
 }
 
@@ -124,6 +133,7 @@ $footer-shadow: rgba(34, 60, 80, .6);
   }
 
   &__text {
+    line-height: 160%;
     @media screen and (max-width: 980px) {
       text-align: center;
     }
@@ -134,7 +144,9 @@ $footer-shadow: rgba(34, 60, 80, .6);
   color: $text-color;
   font-size: 18px;
   font-weight: 400;
+  margin-top: 7px;
   margin-bottom: 31px;
+  line-height: 160%;
   @media screen and (max-width: 1124px) {
     text-align: center;
   }
@@ -151,6 +163,7 @@ $footer-shadow: rgba(34, 60, 80, .6);
   margin-bottom: 10px;
   opacity: 70%;
   font-size: 18px;
+  line-height: 160%;
 
   a {
     &:hover {
@@ -167,10 +180,13 @@ $footer-shadow: rgba(34, 60, 80, .6);
 }
 
 .sub-footer {
-  font-size: 16px;
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 32px;
   color: $text-color;
   opacity: 70%;
   box-shadow: 0 5px 3px -6px $footer-shadow inset;
@@ -186,14 +202,17 @@ $footer-shadow: rgba(34, 60, 80, .6);
 
   &__input {
     background: $footer-bg-color;
-    padding: 15px 30px;
+    padding: 15px 19px;
     border: 1px solid $footer-input-border;
     border-radius: 5px 0 0 5px;
     outline: 0 !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     color: $text-color;
-    font-weight: 400;
-    width: 220px;
+    
+    min-width: 226px;
     display: block;
   }
 }
