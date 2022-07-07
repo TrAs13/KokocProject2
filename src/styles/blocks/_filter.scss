@@ -21,7 +21,7 @@ $filter-shadow: rgba(34, 60, 80, .03);
   }
 
   background: $secondary-color;
-  padding: 29px 20px;
+  padding: 30px 20px;
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0 $filter-shadow;
@@ -32,11 +32,13 @@ $filter-shadow: rgba(34, 60, 80, .03);
   margin-bottom: 136px;
 
   &__item {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin-left: 35px;
-    margin-right: 60px;
+    margin-right: 61px;
     @media screen and (max-width: 768px) {
       width: 100%;
       margin-bottom: 20px;
@@ -75,12 +77,13 @@ $filter-shadow: rgba(34, 60, 80, .03);
     appearance: none;
     background-image: url('../../images/main-screen/filter-arrow.png');
     background-repeat: no-repeat;
-    background-position: right 0% top 50%;
+    background-position: right 5% top 50%;
     width: calc(100% + 22px);
   }
 
   &__option {
     font-family: 'Poppins';
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;
