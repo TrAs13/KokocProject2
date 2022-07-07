@@ -56,8 +56,8 @@
   }
 
   .slick-prev {
-    left: 67.7%;
-    top: 3.4%;
+    left: 67.2%;
+    top: 3%;
     display: block;
     z-index: 100;
 
@@ -73,8 +73,8 @@
   }
 
   .slick-next {
-    right: 6.1%;
-    top: 3.4%;
+    right: 6.5%;
+    top: 3%;
 
     &::before {
       content: '';
@@ -96,7 +96,7 @@
     width: 100px;
     height: 100px;
     margin-bottom: 30px;
-    margin-top: 9px;
+    margin-top: 7px;
     border-radius: 50%;
     border: 2px solid $main-color;
 
@@ -130,14 +130,17 @@
   }
 
   &__paragraph {
-    margin-bottom: 28px;
+    margin-bottom: 25px;
     opacity: 70%;
     font-style: italic;
-    font-size: 14px;
     font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    max-width: 390px;
 
     @media screen and (max-width: 768px) {
       margin-bottom: 15px;
+      max-width: none;
     }
   }
 

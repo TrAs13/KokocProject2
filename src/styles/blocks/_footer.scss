@@ -5,21 +5,12 @@ $footer-shadow: rgba(34, 60, 80, .6);
 .footer {
   background: $footer-bg-color;
   padding: 100px 0 30px;
-}
 
-.footer-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: center;
-  margin-bottom: 38px;
-  gap: 77px;
-
-  &__left {
+  &__wrapper {
     display: flex;
-  }
-
-  &__right {
-    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 38px;
+    gap: 77px;
   }
 
   &__links {
@@ -162,6 +153,8 @@ $footer-shadow: rgba(34, 60, 80, .6);
 .footer-li {
   margin-bottom: 10px;
   opacity: 70%;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 160%;
 
@@ -176,7 +169,7 @@ $footer-shadow: rgba(34, 60, 80, .6);
   color: $text-color;
   opacity: 70%;
   font-size: 18px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .sub-footer {

@@ -8,7 +8,7 @@ $video-bg-color: rgba(225, 193, 193, .77);
 
   &__left-side {
     width: 50%;
-    margin: 70px 0;
+    margin: 67px 0;
     @media screen and (max-width: 880px) {
       width: 100%;
       margin: auto;
@@ -88,15 +88,24 @@ $video-bg-color: rgba(225, 193, 193, .77);
   font-family: 'Source Serif Pro', serif;
 
   &__video {
-    margin-bottom: 13px;
-    letter-spacing: 2px
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
   }
 
   &__parag {
-    font-family: 'Poppins', sans-serif;
-    color: $text-color;
-    font-size: 16px;
-    opacity: 70%;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $text-color;
+    opacity: 70%;
+  }
+
+  &__header {
+    margin-bottom: 20px;
   }
 }
