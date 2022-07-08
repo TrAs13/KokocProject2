@@ -6,7 +6,7 @@
   }
   margin-bottom: 80px;
   @media screen and (max-width: 540px) {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 
   position: relative;
@@ -33,11 +33,13 @@
 }
 
 .tagline {
-  // line-height: 1.2;
 
   &__sup {
     font-family: 'Source Serif Pro', serif;
     font-size: 61px;
+    @media screen and (max-width: 540px) {
+      font-size: 45px;
+    }
     line-height: 120%;
     margin-bottom: 18px;
     font-style: normal;

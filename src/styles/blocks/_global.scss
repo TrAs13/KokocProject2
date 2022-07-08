@@ -34,6 +34,9 @@ a {
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
+  @media screen and (max-width: 540px) {
+    font-size: 30px;
+  }
   line-height: 130%;
   margin-bottom: 25px;
 }
