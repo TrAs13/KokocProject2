@@ -30,6 +30,16 @@ $video-bg-color: rgba(225, 193, 193, .77);
       position: relative;
       margin-left: 18px;
       margin-top: 2px;
+
+      @media screen and (max-width: 1140px) {
+        margin: 0;
+      }
+
+      img {
+        @media screen and (max-width: 1140px) {
+          max-width: 100%;
+        }
+      }
     }
   }
 
