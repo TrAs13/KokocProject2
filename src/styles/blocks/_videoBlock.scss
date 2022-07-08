@@ -2,6 +2,9 @@ $video-bg-color: rgba(225, 193, 193, .77);
 
 .video {
   margin-bottom: 136px;
+  @media screen and (max-width: 540px) {
+    margin-bottom: 60px;
+  }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

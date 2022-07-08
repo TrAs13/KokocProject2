@@ -1,5 +1,8 @@
 .cards {
   margin-bottom: 141px;
+  @media screen and (max-width: 540px) {
+    margin-bottom: 60px;
+  }
 }
 
 .cards-wrapper {

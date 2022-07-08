@@ -2,6 +2,9 @@ $gal-border-color: rgba(26, 10, 3, .1);
 
 .gallary {
   margin-bottom: 136px;
+  @media screen and (max-width: 540px) {
+    margin-bottom: 60px;
+  }
 
   &__title {
     letter-spacing: 1.5px;

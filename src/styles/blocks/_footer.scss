@@ -5,12 +5,21 @@ $footer-shadow: rgba(34, 60, 80, .6);
 .footer {
   background: $footer-bg-color;
   padding: 100px 0 30px;
+  @media screen and (max-width: 540px) {
+    padding-top: 50px;
+  }
 
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 38px;
     gap: 77px;
+    @media screen and (max-width: 540px) {
+      gap: 45px;
+    }
+    @media screen and (max-width: 1124px) {
+      justify-content: center;
+    }
   }
 
   &__links {
@@ -118,6 +127,7 @@ $footer-shadow: rgba(34, 60, 80, .6);
   max-width: 320px;
   @media screen and (max-width: 1124px) {
     max-width: none;
+    padding-left: 0;
   }
   @media screen and (max-width: 540px) {
     text-align: center;
